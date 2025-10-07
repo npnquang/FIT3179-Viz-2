@@ -3,17 +3,16 @@
     "width": 900,
     "height": 500,
     "projection": { "type": "naturalEarth1" },
+    "title": {
+        "text": "Number of Storms per Year (2005-2025)",
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "#333"
+    },
     "params": [
         {
-            "name": "yearSlider",
-            "value": 2010,
-            "bind": {
-                "input": "range",
-                "min": 2005,
-                "max": 2025,
-                "step": 1,
-                "name": "Year: "
-            }
+            "name": "globalYear",
+            "value": 2010
         }
     ],
     "layer": [
@@ -49,7 +48,7 @@
             },
             "transform": [
                 {
-                    "filter": "datum.YEAR == yearSlider"
+                    "filter": "datum.YEAR == globalYear"
                 }
             ],
             "mark": {

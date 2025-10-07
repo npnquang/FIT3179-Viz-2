@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Number of Typhoons per Year",
+        "text": "Number of Storms per Year (2005-2025)",
         "fontSize": 16,
         "anchor": "start",
         "color": "#333"
@@ -13,49 +13,35 @@
     },
     "params": [
         {
-            "name": "startYear",
-            "value": 2005,
-            "bind": {
-                "input": "range",
-                "min": 2005,
-                "max": 2025,
-                "step": 1,
-                "name": "Start Year: "
-            }
-        },
-        {
-            "name": "endYear",
-            "value": 2025,
-            "bind": {
-                "input": "range",
-                "min": 2005,
-                "max": 2025,
-                "step": 1,
-                "name": "End Year: "
-            }
+            "name": "globalYear",
+            "value": 2010
         }
     ],
     "transform": [
         {
-            "filter": "datum.YEAR >= startYear && datum.YEAR <= endYear"
+            "filter": "datum.YEAR >= 2005 && datum.YEAR <= 2025"
         },
         {
             "aggregate": [
                 {
                     "op": "count",
-                    "as": "typhoon_count"
+                    "as": "storm_count"
                 }
             ],
             "groupby": ["YEAR"]
+        },
+        {
+            "calculate": "datum.YEAR == globalYear ? 'Selected Year' : 'Other Years'",
+            "as": "yearCategory"
         }
     ],
     "layer": [
         {
             "mark": {
                 "type": "line",
-                "point": true,
                 "strokeWidth": 3,
-                "color": "#1f77b4"
+                "color": "#1f77b4",
+                "opacity": 0.8
             },
             "encoding": {
                 "x": {
@@ -68,12 +54,50 @@
                     }
                 },
                 "y": {
-                    "field": "typhoon_count",
+                    "field": "storm_count",
                     "type": "quantitative",
-                    "title": "Number of Typhoons",
+                    "title": "Number of Storms",
                     "axis": {
                         "grid": true
                     }
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "size": 150,
+                "filled": true
+            },
+            "encoding": {
+                "x": {
+                    "field": "YEAR",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "storm_count",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "yearCategory",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": ["Selected Year", "Other Years"],
+                        "range": ["#d62728", "#1f77b4"]
+                    },
+                    "legend": {
+                        "title": "Year Selection",
+                        "orient": "top-right"
+                    }
+                },
+                "size": {
+                    "field": "yearCategory",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": ["Selected Year", "Other Years"],
+                        "range": [200, 100]
+                    },
+                    "legend": null
                 },
                 "tooltip": [
                     {
@@ -82,9 +106,9 @@
                         "title": "Year"
                     },
                     {
-                        "field": "typhoon_count",
+                        "field": "storm_count",
                         "type": "quantitative",
-                        "title": "Number of Typhoons"
+                        "title": "Number of Storms"
                     }
                 ]
             }
@@ -105,12 +129,21 @@
                     "type": "ordinal"
                 },
                 "y": {
-                    "field": "typhoon_count",
+                    "field": "storm_count",
                     "type": "quantitative"
                 },
                 "text": {
-                    "field": "typhoon_count",
+                    "field": "storm_count",
                     "type": "quantitative"
+                },
+                "opacity": {
+                    "field": "yearCategory",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": ["Selected Year", "Other Years"],
+                        "range": [1, 0.6]
+                    },
+                    "legend": null
                 }
             }
         }
