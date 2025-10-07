@@ -63,14 +63,6 @@
       console.error('Error loading dashboard:', error);
     }
   });
-
-  // Example function to add new visualizations dynamically
-  function addNewVisualization(containerId, specPath, viewName) {
-    return GlobalDashboardState.loadVisualization(containerId, specPath, viewName);
-  }
-  
-  // Make functions available globally for testing
-  window.addNewVisualization = addNewVisualization;
 </script>
 
 </body>
