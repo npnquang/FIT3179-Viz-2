@@ -1,0 +1,128 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Number of Typhoons per Year",
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "#333"
+    },
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/npnquang/FIT3179-Homework-10/refs/heads/main/data/ibtracs_first_locations.csv"
+    },
+    "params": [
+        {
+            "name": "startYear",
+            "value": 2005,
+            "bind": {
+                "input": "range",
+                "min": 2005,
+                "max": 2025,
+                "step": 1,
+                "name": "Start Year: "
+            }
+        },
+        {
+            "name": "endYear",
+            "value": 2025,
+            "bind": {
+                "input": "range",
+                "min": 2005,
+                "max": 2025,
+                "step": 1,
+                "name": "End Year: "
+            }
+        }
+    ],
+    "transform": [
+        {
+            "filter": "datum.YEAR >= startYear && datum.YEAR <= endYear"
+        },
+        {
+            "aggregate": [
+                {
+                    "op": "count",
+                    "as": "typhoon_count"
+                }
+            ],
+            "groupby": ["YEAR"]
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "point": true,
+                "strokeWidth": 3,
+                "color": "#1f77b4"
+            },
+            "encoding": {
+                "x": {
+                    "field": "YEAR",
+                    "type": "ordinal",
+                    "title": "Year",
+                    "axis": {
+                        "labelAngle": -45,
+                        "grid": true
+                    }
+                },
+                "y": {
+                    "field": "typhoon_count",
+                    "type": "quantitative",
+                    "title": "Number of Typhoons",
+                    "axis": {
+                        "grid": true
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "YEAR",
+                        "type": "ordinal",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "typhoon_count",
+                        "type": "quantitative",
+                        "title": "Number of Typhoons"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "bottom",
+                "dy": -10,
+                "fontSize": 10,
+                "fontWeight": "bold",
+                "color": "#666"
+            },
+            "encoding": {
+                "x": {
+                    "field": "YEAR",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "typhoon_count",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "typhoon_count",
+                    "type": "quantitative"
+                }
+            }
+        }
+    ],
+    "config": {
+        "axis": {
+            "labelFontSize": 11,
+            "titleFontSize": 13
+        },
+        "legend": {
+            "labelFontSize": 11,
+            "titleFontSize": 13
+        }
+    }
+}
