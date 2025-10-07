@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Symbol Map Visualization</title>
+  <title>Storm Analysis Dashboard</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
   
+  <!-- Dashboard State Manager -->
+  <script src="js/dashboard-state.js"></script>
   
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
@@ -17,25 +19,110 @@
 <body>
 <h1>Storm Analysis Dashboard (2005-2025)</h1>
 
-<h2>Number of Typhoons per Year</h2>
-<div id="line_chart"></div>
+<!-- Global Year Control -->
+<div class="global-controls">
+  <h3>Global Controls</h3>
+  <div class="year-control">
+    <label for="globalYear">Year: </label>
+    <input type="range" id="globalYear" min="2005" max="2025" step="1" value="2010">
+    <span id="yearDisplay">2010</span>
+  </div>
+  <div class="control-description">
+    <small>Use the slider above to change the year for all visualizations simultaneously.</small>
+  </div>
+</div>
 
-<h2>Storm Origin Locations</h2>
+
 <div id="symbol_map"></div>
 
-<script type="text/javascript">
-  // Line Chart
-  var lineChartSpec = "js/line_chart.vg.json";
-  vegaEmbed('#line_chart', lineChartSpec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+<div id="line_chart"></div>
 
-  // Symbol Map
-  var spec2 = "js/dotmap_map.vg.json";
-  vegaEmbed('#symbol_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+
+<script type="text/javascript">
+  // Initialize dashboard when page loads
+  document.addEventListener('DOMContentLoaded', async function() {
+    try {
+      // Initialize the global dashboard state
+      GlobalDashboardState.init();
+      
+      // Add example event listener
+      GlobalDashboardState.addEventListener('yearChange', function(data) {
+        console.log('Year changed from', data.oldYear, 'to', data.newYear);
+      });
+      
+      // Load all visualizations using the dashboard state manager
+      await Promise.all([
+        GlobalDashboardState.loadVisualization('#line_chart', 'js/line_chart.vg.json', 'lineChart'),
+        GlobalDashboardState.loadVisualization('#symbol_map', 'js/dotmap_map.vg.json', 'symbolMap')
+      ]);
+      
+      console.log('Dashboard loaded successfully!');
+      console.log('Current state:', GlobalDashboardState.getState());
+      
+    } catch (error) {
+      console.error('Error loading dashboard:', error);
+    }
+  });
+
+  // Example function to add new visualizations dynamically
+  function addNewVisualization(containerId, specPath, viewName) {
+    return GlobalDashboardState.loadVisualization(containerId, specPath, viewName);
+  }
+  
+  // Make functions available globally for testing
+  window.addNewVisualization = addNewVisualization;
 </script>
+
+<style>
+.global-controls {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.global-controls h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.year-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.year-control label {
+  font-weight: bold;
+  min-width: 50px;
+}
+
+.year-control input[type="range"] {
+  flex: 1;
+  max-width: 300px;
+}
+
+#yearDisplay {
+  font-weight: bold;
+  color: #1f77b4;
+  min-width: 50px;
+}
+
+.control-description {
+  color: #666;
+  font-style: italic;
+}
+
+/* Visualization containers */
+#line_chart, #symbol_map {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+</style>
 
 </body>
 </html>
