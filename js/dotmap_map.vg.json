@@ -5,13 +5,14 @@
     "projection": { "type": "naturalEarth1" },
     "params": [
         {
-            "name": "timeInterval",
-            "value": "2005-2009",
+            "name": "yearSlider",
+            "value": 2010,
             "bind": {
-                "input": "select",
-                "options": ["2005-2009", "2010-2014", "2015-2019", "2020-2025"],
-                "labels": ["2005-2009", "2010-2014", "2015-2019", "2020-2025"],
-                "name": "Time Period: "
+                "input": "range",
+                "min": 2005,
+                "max": 2025,
+                "step": 1,
+                "name": "Year: "
             }
         }
     ],
@@ -48,11 +49,7 @@
             },
             "transform": [
                 {
-                    "calculate": "datum.YEAR >= 2005 && datum.YEAR <= 2009 ? '2005-2009' : datum.YEAR >= 2010 && datum.YEAR <= 2014 ? '2010-2014' : datum.YEAR >= 2015 && datum.YEAR <= 2019 ? '2015-2019' : datum.YEAR >= 2020 && datum.YEAR <= 2025 ? '2020-2025' : 'Other'",
-                    "as": "YearInterval"
-                },
-                {
-                    "filter": "datum.YearInterval == timeInterval"
+                    "filter": "datum.YEAR == yearSlider"
                 }
             ],
             "mark": {
