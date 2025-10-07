@@ -19,16 +19,23 @@
 <body>
 <h1>Storm Analysis Dashboard (2005-2025)</h1>
 
-<!-- Global Year Control -->
-<div class="global-controls">
-  <h3>Global Controls</h3>
-  <div class="year-control">
-    <label for="globalYear">Year: </label>
-    <input type="range" id="globalYear" min="2005" max="2025" step="1" value="2010">
-    <span id="yearDisplay">2010</span>
-  </div>
-  <div class="control-description">
-    <small>Use the slider above to change the year for all visualizations simultaneously.</small>
+<!-- Floating Year Control -->
+<div class="floating-controls">
+  <div class="floating-year-control">
+    <div class="control-header">
+      <span class="control-title">Year Control</span>
+      <button class="toggle-btn" id="toggleControls">-</button>
+    </div>
+    <div class="control-content" id="controlContent">
+      <div class="year-slider-container">
+        <label for="globalYear">Year: </label>
+        <input type="range" id="globalYear" min="2005" max="2025" step="1" value="2010">
+        <span id="yearDisplay" class="year-display">2010</span>
+      </div>
+      <div class="year-info">
+        <small>Drag to change year for all charts</small>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -62,6 +69,35 @@
     } catch (error) {
       console.error('Error loading dashboard:', error);
     }
+  });
+
+  // Add floating controls functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('toggleControls');
+    const controlContent = document.getElementById('controlContent');
+    let isExpanded = true;
+
+    toggleBtn.addEventListener('click', function() {
+      isExpanded = !isExpanded;
+      
+      if (isExpanded) {
+        controlContent.style.display = 'block';
+        toggleBtn.textContent = '-';
+        toggleBtn.setAttribute('aria-label', 'Collapse controls');
+      } else {
+        controlContent.style.display = 'none';
+        toggleBtn.textContent = '+';
+        toggleBtn.setAttribute('aria-label', 'Expand controls');
+      }
+    });
+
+    // Add keyboard support
+    toggleBtn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleBtn.click();
+      }
+    });
   });
 </script>
 
