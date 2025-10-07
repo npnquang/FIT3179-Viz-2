@@ -58,12 +58,42 @@
             "mark": {
                 "type": "circle",
                 "opacity": 0.7,
-                "size": 60,
-                "color": "#d62728"
+                "size": 60
             },
             "encoding": {
                 "longitude": { "field": "LON", "type": "quantitative" },
                 "latitude": { "field": "LAT", "type": "quantitative" },
+                "color": {
+                    "field": "NATURE",
+                    "type": "nominal",
+                    "title": "Storm Type",
+                    "scale": {
+                        "domain": [
+                            "Tropical",
+                            "Extratropical",
+                            "Subtropical",
+                            "Disturbance",
+                            "Mixture(contradicting report from different agencies)",
+                            "Not reported"
+                        ],
+                        "range": [
+                            "#d62728",
+                            "#ff7f0e",
+                            "#2ca02c",
+                            "#1f77b4",
+                            "#9467bd",
+                            "#8c564b"
+                        ]
+                    },
+                    "legend": {
+                        "orient": "right",
+                        "title": "Storm Type",
+                        "titleFontSize": 12,
+                        "labelFontSize": 10,
+                        "symbolSize": 100,
+                        "offset": 20
+                    }
+                },
                 "tooltip": [
                     {
                         "field": "YEAR",
