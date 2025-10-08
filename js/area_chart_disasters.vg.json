@@ -1,0 +1,163 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Proportion of Economic Damages by Natural Disaster Type",
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "#333",
+        "subtitle": "Global economic damages as share of GDP, with storms highlighted",
+        "subtitleFontSize": 12,
+        "subtitleColor": "#666"
+    },
+    "width": 900,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/npnquang/FIT3179-Viz-2/refs/heads/main/data/global_economic_damages_by_disaster_type.csv"
+    },
+    "transform": [
+        {
+            "calculate": "toNumber(datum.Year)",
+            "as": "YearNum"
+        },
+        {
+            "filter": "datum.YearNum >= 2000"
+        },
+        {
+            "calculate": "datum.Disaster_Type == 'Extreme weather' ? 'Storms (Extreme Weather)' : datum.Disaster_Type == 'Extreme temperature' ? 'Extreme Temperature' : datum.Disaster_Type == 'Volcanic activity' ? 'Volcanic Activity' : datum.Disaster_Type == 'Wet mass movement' ? 'Landslides' : datum.Disaster_Type == 'Dry mass movement' ? 'Dry Mass Movement' : datum.Disaster_Type == 'Glacial lake outburst flood' ? 'Glacial Floods' : datum.Disaster_Type",
+            "as": "DisasterTypeFormatted"
+        },
+        {
+            "calculate": "datum.DisasterTypeFormatted == 'Storms (Extreme Weather)' ? 1 : 0",
+            "as": "IsStorm"
+        },
+        {
+            "window": [
+                {
+                    "op": "sum",
+                    "field": "Total_Economic_Damage_Share_GDP",
+                    "as": "YearTotal"
+                }
+            ],
+            "groupby": ["YearNum"]
+        },
+        {
+            "calculate": "datum.YearTotal > 0 ? (datum.Total_Economic_Damage_Share_GDP / datum.YearTotal * 100) : 0",
+            "as": "Percentage"
+        }
+    ],
+    "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.8
+    },
+    "encoding": {
+        "x": {
+            "field": "YearNum",
+            "type": "quantitative",
+            "title": "Year",
+            "axis": {
+                "format": ""
+            }
+        },
+        "y": {
+            "field": "Percentage",
+            "type": "quantitative",
+            "title": "Percentage of Total Economic Damage (%)",
+            "stack": "normalize",
+            "axis": {
+                "format": ".0%",
+                "labelFontSize": 10,
+                "titleFontSize": 12
+            }
+        },
+        "color": {
+            "field": "DisasterTypeFormatted",
+            "type": "nominal",
+            "title": "Disaster Type",
+            "scale": {
+                "domain": [
+                    "Storms (Extreme Weather)",
+                    "Flood",
+                    "Earthquake",
+                    "Drought",
+                    "Wildfire",
+                    "Extreme Temperature",
+                    "Volcanic Activity",
+                    "Landslides",
+                    "Dry Mass Movement",
+                    "Glacial Floods"
+                ],
+                "range": [
+                    "#DC143C",
+                    "#4682B4",
+                    "#5F9EA0",
+                    "#6495ED",
+                    "#87CEEB",
+                    "#87CEFA",
+                    "#B0C4DE",
+                    "#B0E0E6",
+                    "#ADD8E6",
+                    "#4169E1"
+                ]
+            },
+            "legend": {
+                "orient": "right",
+                "title": "Natural Disaster Types",
+                "titleFontSize": 12,
+                "labelFontSize": 10,
+                "symbolSize": 100,
+                "offset": 10
+            }
+        },
+        "stroke": {
+            "condition": {
+                "test": "datum.IsStorm == 1",
+                "value": "#8B0000"
+            },
+            "value": "transparent"
+        },
+        "strokeWidth": {
+            "condition": {
+                "test": "datum.IsStorm == 1",
+                "value": 3
+            },
+            "value": 0
+        },
+        "opacity": {
+            "condition": {
+                "test": "datum.IsStorm == 1",
+                "value": 1.0
+            },
+            "value": 0.7
+        },
+        "tooltip": [
+            {
+                "field": "YearNum",
+                "type": "quantitative",
+                "title": "Year"
+            },
+            {
+                "field": "DisasterTypeFormatted",
+                "type": "nominal",
+                "title": "Disaster Type"
+            },
+            {
+                "field": "Total_Economic_Damage_Share_GDP",
+                "type": "quantitative",
+                "title": "Economic Damage (% of GDP)",
+                "format": ".4f"
+            },
+            {
+                "field": "Percentage",
+                "type": "quantitative",
+                "title": "Share of Total Damage",
+                "format": ".1f"
+            },
+            {
+                "field": "Countries_With_Data",
+                "type": "quantitative",
+                "title": "Countries Reporting"
+            }
+        ]
+    }
+}
