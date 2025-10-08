@@ -20,9 +20,6 @@
             "as": "YearNum"
         },
         {
-            "filter": "datum.YearNum >= 2000"
-        },
-        {
             "calculate": "datum.Disaster_Type == 'Extreme weather' ? 'Storms (Extreme Weather)' : datum.Disaster_Type == 'Extreme temperature' ? 'Extreme Temperature' : datum.Disaster_Type == 'Volcanic activity' ? 'Volcanic Activity' : datum.Disaster_Type == 'Wet mass movement' ? 'Landslides' : datum.Disaster_Type == 'Dry mass movement' ? 'Dry Mass Movement' : datum.Disaster_Type == 'Glacial lake outburst flood' ? 'Glacial Floods' : datum.Disaster_Type",
             "as": "DisasterTypeFormatted"
         },
