@@ -1,0 +1,631 @@
+Year,Disaster_Type,Total_Economic_Damage_Share_GDP,Countries_With_Data,Total_Countries_In_Year
+1960,Drought,0.0,3,18
+1960,Flood,0.0,8,18
+1960,Earthquake,20.535453847000003,11,18
+1960,Extreme weather,0.602407313,10,18
+1960,Extreme temperature,0.0,0,18
+1960,Volcanic activity,0.0,3,18
+1960,Wildfire,0.0,0,18
+1960,Glacial lake outburst flood,0.0,0,18
+1960,Dry mass movement,0.0,0,18
+1960,Wet mass movement,0.0,5,18
+1961,Drought,0.0,3,19
+1961,Flood,0.0,10,19
+1961,Earthquake,0.0,5,19
+1961,Extreme weather,200.6625097155,12,19
+1961,Extreme temperature,0.0,3,19
+1961,Volcanic activity,0.0,0,19
+1961,Wildfire,0.0,0,19
+1961,Glacial lake outburst flood,0.0,0,19
+1961,Dry mass movement,0.0,0,19
+1961,Wet mass movement,0.0,4,19
+1962,Drought,0.0,0,19
+1962,Flood,0.5074271894,10,19
+1962,Earthquake,0.6546248973,6,19
+1962,Extreme weather,0.768531971,10,19
+1962,Extreme temperature,0.0,3,19
+1962,Volcanic activity,0.0,0,19
+1962,Wildfire,0.0,0,19
+1962,Glacial lake outburst flood,0.0,0,19
+1962,Dry mass movement,0.103013982,2,19
+1962,Wet mass movement,0.0,3,19
+1963,Drought,0.0,2,23
+1963,Flood,0.0,9,23
+1963,Earthquake,0.47498502,3,23
+1963,Extreme weather,75.3187990972,15,23
+1963,Extreme temperature,0.0,4,23
+1963,Volcanic activity,0.0,4,23
+1963,Wildfire,0.0,0,23
+1963,Glacial lake outburst flood,0.0,0,23
+1963,Dry mass movement,0.0,3,23
+1963,Wet mass movement,0.0,4,23
+1964,Drought,0.0,9,29
+1964,Flood,1.1447806481000002,13,29
+1964,Earthquake,1.2248802755000001,9,29
+1964,Extreme weather,7.1117854838,18,29
+1964,Extreme temperature,0.0,0,29
+1964,Volcanic activity,0.0,3,29
+1964,Wildfire,0.0,0,29
+1964,Glacial lake outburst flood,0.0,0,29
+1964,Dry mass movement,0.0,0,29
+1964,Wet mass movement,0.0,3,29
+1965,Drought,0.13226762139999998,9,37
+1965,Flood,2.7328627979999998,17,37
+1965,Earthquake,6.2374436585,9,37
+1965,Extreme weather,1.93182161,15,37
+1965,Extreme temperature,0.0,3,37
+1965,Volcanic activity,0.16178491796,3,37
+1965,Wildfire,0.112967541698,3,37
+1965,Glacial lake outburst flood,0.0,0,37
+1965,Dry mass movement,0.0,0,37
+1965,Wet mass movement,0.0,7,37
+1966,Drought,0.1026814095,11,39
+1966,Flood,4.6652256110999994,18,39
+1966,Earthquake,0.74474755836,10,39
+1966,Extreme weather,11.1465091265,16,39
+1966,Extreme temperature,0.0,3,39
+1966,Volcanic activity,0.0,2,39
+1966,Wildfire,0.0,3,39
+1966,Glacial lake outburst flood,0.0,0,39
+1966,Dry mass movement,0.0,0,39
+1966,Wet mass movement,9.0698438e-06,6,39
+1967,Drought,0.7911495195,10,37
+1967,Flood,4.040084418499999,17,37
+1967,Earthquake,1.6586721505200002,13,37
+1967,Extreme weather,31.559532394,16,37
+1967,Extreme temperature,0.0,0,37
+1967,Volcanic activity,0.0,0,37
+1967,Wildfire,0.23171033920000003,3,37
+1967,Glacial lake outburst flood,0.0,0,37
+1967,Dry mass movement,0.0,0,37
+1967,Wet mass movement,0.0,4,37
+1968,Drought,5.8383792793,13,41
+1968,Flood,8.4175495487,17,41
+1968,Earthquake,0.9872629074999999,14,41
+1968,Extreme weather,0.944614913615,20,41
+1968,Extreme temperature,0.0,3,41
+1968,Volcanic activity,0.7084349829100001,5,41
+1968,Wildfire,0.0031471403820000003,4,41
+1968,Glacial lake outburst flood,0.0,0,41
+1968,Dry mass movement,0.0,0,41
+1968,Wet mass movement,0.0,6,41
+1969,Drought,3.7455300616,13,41
+1969,Flood,9.363007027499998,15,41
+1969,Earthquake,0.1468411243,12,41
+1969,Extreme weather,5.890726256400001,18,41
+1969,Extreme temperature,0.0,0,41
+1969,Volcanic activity,0.002455023736,5,41
+1969,Wildfire,0.0,3,41
+1969,Glacial lake outburst flood,0.0,0,41
+1969,Dry mass movement,0.0,0,41
+1969,Wet mass movement,0.0,3,41
+1970,Drought,6.5495207971000005,11,40
+1970,Flood,8.905821182,22,40
+1970,Earthquake,0.9546558613,11,40
+1970,Extreme weather,5.969018404800001,16,40
+1970,Extreme temperature,0.0,0,40
+1970,Volcanic activity,0.0,0,40
+1970,Wildfire,0.0168076954,3,40
+1970,Glacial lake outburst flood,0.0,0,40
+1970,Dry mass movement,0.0,0,40
+1970,Wet mass movement,0.0,8,40
+1971,Drought,4.63336110445,17,41
+1971,Flood,1.2360070574000002,12,41
+1971,Earthquake,2.3478065003,9,41
+1971,Extreme weather,0.5024485254,18,41
+1971,Extreme temperature,0.2334506473,4,41
+1971,Volcanic activity,0.0012140476,5,41
+1971,Wildfire,0.0,0,41
+1971,Glacial lake outburst flood,0.0,0,41
+1971,Dry mass movement,0.0,0,41
+1971,Wet mass movement,0.0,9,41
+1972,Drought,4.966786936149999,17,42
+1972,Flood,3.574433720621,17,42
+1972,Earthquake,0.7361575329000001,9,42
+1972,Extreme weather,8.890215093300002,20,42
+1972,Extreme temperature,0.0,4,42
+1972,Volcanic activity,0.0,0,42
+1972,Wildfire,0.0,0,42
+1972,Glacial lake outburst flood,0.0,0,42
+1972,Dry mass movement,0.0,0,42
+1972,Wet mass movement,0.0,9,42
+1973,Drought,4.2058027212,17,40
+1973,Flood,11.945605781,19,40
+1973,Earthquake,0.01941251334,10,40
+1973,Extreme weather,0.4941243595,16,40
+1973,Extreme temperature,0.0,5,40
+1973,Volcanic activity,2.1407559022300005,3,40
+1973,Wildfire,0.0,4,40
+1973,Glacial lake outburst flood,0.0,0,40
+1973,Dry mass movement,0.0,0,40
+1973,Wet mass movement,0.0,6,40
+1974,Drought,2.72246612423,15,40
+1974,Flood,6.842494564999999,18,40
+1974,Earthquake,0.039100244,8,40
+1974,Extreme weather,58.371426647839996,16,40
+1974,Extreme temperature,0.0,0,40
+1974,Volcanic activity,0.0,0,40
+1974,Wildfire,0.0,0,40
+1974,Glacial lake outburst flood,0.0,0,40
+1974,Dry mass movement,0.0,0,40
+1974,Wet mass movement,0.00299250448,8,40
+1975,Drought,2.1477275935,13,43
+1975,Flood,1.2968345404000001,14,43
+1975,Earthquake,0.03905961596,9,43
+1975,Extreme weather,1.1495885867999998,19,43
+1975,Extreme temperature,0.072004416,4,43
+1975,Volcanic activity,0.0,5,43
+1975,Wildfire,0.0,0,43
+1975,Glacial lake outburst flood,0.0,0,43
+1975,Dry mass movement,0.0,0,43
+1975,Wet mass movement,0.0,8,43
+1976,Drought,1.03561187082,11,44
+1976,Flood,4.0012184517,17,44
+1976,Earthquake,30.908939470999997,17,44
+1976,Extreme weather,2.4378255867,22,44
+1976,Extreme temperature,0.0,0,44
+1976,Volcanic activity,0.003699764066,8,44
+1976,Wildfire,0.0,3,44
+1976,Glacial lake outburst flood,0.0,0,44
+1976,Dry mass movement,0.0,0,44
+1976,Wet mass movement,0.33791384,9,44
+1977,Drought,6.478474972999999,18,49
+1977,Flood,1.017216917066,29,49
+1977,Earthquake,3.688107663715,11,49
+1977,Extreme weather,19.20945880357,18,49
+1977,Extreme temperature,0.22090746,3,49
+1977,Volcanic activity,0.0036637309,4,49
+1977,Wildfire,0.002031566744,3,49
+1977,Glacial lake outburst flood,0.0,0,49
+1977,Dry mass movement,0.0,0,49
+1977,Wet mass movement,0.01253222448,8,49
+1978,Drought,8.3685022613,16,50
+1978,Flood,3.9107624261500002,31,50
+1978,Earthquake,0.7573990079999999,10,50
+1978,Extreme weather,10.8987531215,23,50
+1978,Extreme temperature,0.0,3,50
+1978,Volcanic activity,0.0,3,50
+1978,Wildfire,0.0,3,50
+1978,Glacial lake outburst flood,0.0,0,50
+1978,Dry mass movement,0.0,0,50
+1978,Wet mass movement,0.0,4,50
+1979,Drought,1.157906339,15,54
+1979,Flood,0.6954730601100001,26,54
+1979,Earthquake,0.19909840929999997,13,54
+1979,Extreme weather,98.7629642495,21,54
+1979,Extreme temperature,0.0007871552,4,54
+1979,Volcanic activity,0.0,7,54
+1979,Wildfire,1.15729349424,3,54
+1979,Glacial lake outburst flood,0.0,0,54
+1979,Dry mass movement,0.0,0,54
+1979,Wet mass movement,0.011949996248,10,54
+1980,Drought,0.4686728295,24,59
+1980,Flood,1.4197544402,24,59
+1980,Earthquake,30.44059833337,17,59
+1980,Extreme weather,109.02848843,26,59
+1980,Extreme temperature,0.109648466,5,59
+1980,Volcanic activity,0.047148839399999996,5,59
+1980,Wildfire,0.0,3,59
+1980,Glacial lake outburst flood,0.0,0,59
+1980,Dry mass movement,0.0,3,59
+1980,Wet mass movement,0.0,6,59
+1981,Drought,2.75809271,25,62
+1981,Flood,1.18060600657,27,62
+1981,Earthquake,2.8627094565149998,13,62
+1981,Extreme weather,7.439561335199998,28,62
+1981,Extreme temperature,0.0,4,62
+1981,Volcanic activity,0.0,3,62
+1981,Wildfire,0.0,5,62
+1981,Glacial lake outburst flood,0.0,0,62
+1981,Dry mass movement,0.0,0,62
+1981,Wet mass movement,0.0,11,62
+1982,Drought,1.8183470205274999,32,65
+1982,Flood,19.06055469764,34,65
+1982,Earthquake,0.215243846336,14,65
+1982,Extreme weather,47.6029303694,26,65
+1982,Extreme temperature,0.0,6,65
+1982,Volcanic activity,0.257366736,4,65
+1982,Wildfire,0.0,5,65
+1982,Glacial lake outburst flood,0.0,0,65
+1982,Dry mass movement,0.0,2,65
+1982,Wet mass movement,0.20277589029999998,14,65
+1983,Drought,20.375912781,52,91
+1983,Flood,9.417047153087001,34,91
+1983,Earthquake,2.4304262107000008,21,91
+1983,Extreme weather,49.509712967140004,29,91
+1983,Extreme temperature,0.0,5,91
+1983,Volcanic activity,0.22661632569999998,9,91
+1983,Wildfire,28.540698134500005,11,91
+1983,Glacial lake outburst flood,0.0,0,91
+1983,Dry mass movement,0.0,5,91
+1983,Wet mass movement,7.059686034,16,91
+1984,Drought,0.308524648,31,74
+1984,Flood,1.4605706004,29,74
+1984,Earthquake,0.01901203664,12,74
+1984,Extreme weather,21.534229736,27,74
+1984,Extreme temperature,0.0,3,74
+1984,Volcanic activity,0.0,9,74
+1984,Wildfire,0.001215492051,9,74
+1984,Glacial lake outburst flood,0.0,0,74
+1984,Dry mass movement,0.0,0,74
+1984,Wet mass movement,0.056673955670000005,10,74
+1985,Drought,0.15751997140000001,22,75
+1985,Flood,3.3510942550199996,36,75
+1985,Earthquake,10.886958768870002,17,75
+1985,Extreme weather,141.97432805971002,31,75
+1985,Extreme temperature,0.08027587580000001,11,75
+1985,Volcanic activity,2.924931822,4,75
+1985,Wildfire,0.3745009177,14,75
+1985,Glacial lake outburst flood,0.0,0,75
+1985,Dry mass movement,0.0,5,75
+1985,Wet mass movement,0.0,7,75
+1986,Drought,0.0206390558,9,63
+1986,Flood,7.144252762570002,39,63
+1986,Earthquake,41.380792510551,18,63
+1986,Extreme weather,20.132885294700003,32,63
+1986,Extreme temperature,0.063705311,5,63
+1986,Volcanic activity,0.0,5,63
+1986,Wildfire,0.0,8,63
+1986,Glacial lake outburst flood,0.0,0,63
+1986,Dry mass movement,0.0,0,63
+1986,Wet mass movement,0.0,8,63
+1987,Drought,0.0,17,69
+1987,Flood,18.662478183999998,41,69
+1987,Earthquake,11.462621281099999,15,69
+1987,Extreme weather,43.31657820880001,33,69
+1987,Extreme temperature,0.0,10,69
+1987,Volcanic activity,0.0,4,69
+1987,Wildfire,0.1365083871,10,69
+1987,Glacial lake outburst flood,0.0,0,69
+1987,Dry mass movement,0.001370152391,3,69
+1987,Wet mass movement,0.10067850529,13,69
+1988,Drought,1.5020455124999998,24,80
+1988,Flood,11.152701369299999,52,80
+1988,Earthquake,2.4971747100000004,17,80
+1988,Extreme weather,49.39894956765,31,80
+1988,Extreme temperature,0.0003585944435,8,80
+1988,Volcanic activity,0.0,6,80
+1988,Wildfire,0.0,0,80
+1988,Glacial lake outburst flood,0.0,0,80
+1988,Dry mass movement,0.0,5,80
+1988,Wet mass movement,0.0,16,80
+1989,Drought,0.2041424265,15,68
+1989,Flood,1.7674759956,40,68
+1989,Earthquake,1.7975248140000002,15,68
+1989,Extreme weather,71.81680709656999,34,68
+1989,Extreme temperature,0.0,6,68
+1989,Volcanic activity,0.0,3,68
+1989,Wildfire,0.8271745561999999,5,68
+1989,Glacial lake outburst flood,0.0,0,68
+1989,Dry mass movement,0.0,5,68
+1989,Wet mass movement,0.01973265381,14,68
+1990,Drought,1.29614304475,21,86
+1990,Flood,5.112355333150001,37,86
+1990,Earthquake,8.1251022155,28,86
+1990,Extreme weather,171.16486804939998,45,86
+1990,Extreme temperature,0.44679981484000003,14,86
+1990,Volcanic activity,0.007860384253,4,86
+1990,Wildfire,4.4738128129999994,7,86
+1990,Glacial lake outburst flood,0.0,0,86
+1990,Dry mass movement,0.0,3,86
+1990,Wet mass movement,0.0,9,86
+1991,Drought,4.0885775045,32,83
+1991,Flood,9.57410775214,40,83
+1991,Earthquake,1.5299838530600003,21,83
+1991,Extreme weather,241.23228009772004,34,83
+1991,Extreme temperature,0.0793416556,12,83
+1991,Volcanic activity,0.473152979125,13,83
+1991,Wildfire,5.458107105200001,12,83
+1991,Glacial lake outburst flood,0.0,0,83
+1991,Dry mass movement,0.0,5,83
+1991,Wet mass movement,0.01673083718,11,83
+1992,Drought,3.4983845705000003,31,89
+1992,Flood,31.5327225244,39,89
+1992,Earthquake,12.005808467199998,24,89
+1992,Extreme weather,13.0843035592,29,89
+1992,Extreme temperature,7.6786465459999995,10,89
+1992,Volcanic activity,0.0,9,89
+1992,Wildfire,0.47055025525,11,89
+1992,Glacial lake outburst flood,0.0,0,89
+1992,Dry mass movement,0.0,7,89
+1992,Wet mass movement,8.402441557224,12,89
+1993,Drought,0.5631443495999999,24,90
+1993,Flood,22.6992200654,56,90
+1993,Earthquake,0.27528653882,19,90
+1993,Extreme weather,41.46540163645,44,90
+1993,Extreme temperature,0.2878171736,6,90
+1993,Volcanic activity,0.0008414586485,9,90
+1993,Wildfire,0.0229697082,4,90
+1993,Glacial lake outburst flood,0.0,0,90
+1993,Dry mass movement,0.0,5,90
+1993,Wet mass movement,11.7580941938,21,90
+1994,Drought,5.136159698799999,25,89
+1994,Flood,6.171496578399999,56,89
+1994,Earthquake,2.5703232006700003,18,89
+1994,Extreme weather,8.5322471985136,40,89
+1994,Extreme temperature,0.1027451057,13,89
+1994,Volcanic activity,2.0103685211399998,6,89
+1994,Wildfire,0.04768725627900001,13,89
+1994,Glacial lake outburst flood,0.0,0,89
+1994,Dry mass movement,0.0,0,89
+1994,Wet mass movement,2.19494654433,14,89
+1995,Drought,1.6154791807,19,94
+1995,Flood,21.874501563582996,56,94
+1995,Earthquake,3.3784774504,20,94
+1995,Extreme weather,199.78142098794,40,94
+1995,Extreme temperature,0.16355297829999998,15,94
+1995,Volcanic activity,0.0175012416941,8,94
+1995,Wildfire,0.05861925667000001,11,94
+1995,Glacial lake outburst flood,0.0,0,94
+1995,Dry mass movement,0.0,0,94
+1995,Wet mass movement,0.09908060882599999,15,94
+1996,Drought,1.5983704905000002,13,89
+1996,Flood,28.208533523539998,61,89
+1996,Earthquake,0.1237591592,12,89
+1996,Extreme weather,7.3237164902977,41,89
+1996,Extreme temperature,0.0,10,89
+1996,Volcanic activity,0.22230443923999998,7,89
+1996,Wildfire,127.32474766370001,7,89
+1996,Glacial lake outburst flood,0.0,0,89
+1996,Dry mass movement,0.0,0,89
+1996,Wet mass movement,0.0034885394080000002,23,89
+1997,Drought,1.7244347888400002,26,100
+1997,Flood,13.856998359383999,66,100
+1997,Earthquake,3.388999574599,21,100
+1997,Extreme weather,5.3278650040199995,40,100
+1997,Extreme temperature,0.004639135445,15,100
+1997,Volcanic activity,2.5159105e-05,6,100
+1997,Wildfire,4.225723420362001,18,100
+1997,Glacial lake outburst flood,0.0,0,100
+1997,Dry mass movement,0.0,0,100
+1997,Wet mass movement,0.014254881381000001,16,100
+1998,Drought,6.6531837424699996,34,111
+1998,Flood,22.792789745800004,62,111
+1998,Earthquake,0.54841079444,21,111
+1998,Extreme weather,234.39939489940602,43,111
+1998,Extreme temperature,0.077149891,15,111
+1998,Volcanic activity,0.0,7,111
+1998,Wildfire,2.0508994584,20,111
+1998,Glacial lake outburst flood,0.0,0,111
+1998,Dry mass movement,0.0,0,111
+1998,Wet mass movement,0.113315369724,21,111
+1999,Drought,6.4156722597,34,124
+1999,Flood,9.947046388749,71,124
+1999,Earthquake,14.434037615480001,23,124
+1999,Extreme weather,23.151614542951002,57,124
+1999,Extreme temperature,0.0171105153,12,124
+1999,Volcanic activity,0.0,7,124
+1999,Wildfire,1.3106698411,24,124
+1999,Glacial lake outburst flood,0.0,0,124
+1999,Dry mass movement,0.0,0,124
+1999,Wet mass movement,0.25639187027,18,124
+2000,Drought,19.017574301774594,43,116
+2000,Flood,17.9204742199,74,116
+2000,Earthquake,0.5292157348600001,23,116
+2000,Extreme weather,38.364414893793,47,116
+2000,Extreme temperature,1.610706383735,31,116
+2000,Volcanic activity,0.002813351342,8,116
+2000,Wildfire,0.6212447466000001,23,116
+2000,Glacial lake outburst flood,0.0,0,116
+2000,Dry mass movement,0.0,3,116
+2000,Wet mass movement,0.16843154895999998,23,116
+2001,Drought,10.033433759216999,45,118
+2001,Flood,6.43394658653,83,118
+2001,Earthquake,16.47110422278,20,118
+2001,Extreme weather,55.453568998256,49,118
+2001,Extreme temperature,0.3726072957034,24,118
+2001,Volcanic activity,0.048918729875999996,11,118
+2001,Wildfire,0.007396222484999999,13,118
+2001,Glacial lake outburst flood,0.0,0,118
+2001,Dry mass movement,0.0,0,118
+2001,Wet mass movement,0.06804477106,16,118
+2002,Drought,2.501411629387,40,127
+2002,Flood,11.207707237089998,91,127
+2002,Earthquake,10.726351075303999,24,127
+2002,Extreme weather,9.169938637264,64,127
+2002,Extreme temperature,0.0,18,127
+2002,Volcanic activity,0.107617188753,10,127
+2002,Wildfire,0.1471275524,18,127
+2002,Glacial lake outburst flood,0.0,0,127
+2002,Dry mass movement,0.0,3,127
+2002,Wet mass movement,0.15529531234,20,127
+2003,Drought,2.8641032203399996,28,122
+2003,Flood,22.03386049831,85,122
+2003,Earthquake,8.018363074,23,122
+2003,Extreme weather,10.413683368596,46,122
+2003,Extreme temperature,1.7322745509999997,29,122
+2003,Volcanic activity,0.0,5,122
+2003,Wildfire,1.311459473,16,122
+2003,Glacial lake outburst flood,0.0,0,122
+2003,Dry mass movement,0.0,0,122
+2003,Wet mass movement,2.645908986795,19,122
+2004,Drought,0.2609990429,22,120
+2004,Flood,5.39973131637,74,120
+2004,Earthquake,58.862982555040006,33,120
+2004,Extreme weather,218.12354092902,60,120
+2004,Extreme temperature,0.0,23,120
+2004,Volcanic activity,0.0,5,120
+2004,Wildfire,0.0003220686087,10,120
+2004,Glacial lake outburst flood,0.0,0,120
+2004,Dry mass movement,0.0,3,120
+2004,Wet mass movement,0.004136033669,14,120
+2005,Drought,0.9822108225,28,125
+2005,Flood,64.552524163795,89,125
+2005,Earthquake,4.042722728384999,20,125
+2005,Extreme weather,21.721709420939995,70,125
+2005,Extreme temperature,0.03038068725,30,125
+2005,Volcanic activity,0.0,11,125
+2005,Wildfire,1.0699644334800003,17,125
+2005,Glacial lake outburst flood,0.0,0,125
+2005,Dry mass movement,0.0,0,125
+2005,Wet mass movement,0.0101872813,15,125
+2006,Drought,0.8951112683,25,110
+2006,Flood,8.522292766767,89,110
+2006,Earthquake,1.71049821946,18,110
+2006,Extreme weather,2.64112173499,32,110
+2006,Extreme temperature,0.1054476139,32,110
+2006,Volcanic activity,0.32252273043,11,110
+2006,Wildfire,0.08126128431,9,110
+2006,Glacial lake outburst flood,0.0,0,110
+2006,Dry mass movement,0.0,3,110
+2006,Wet mass movement,0.012730598070000002,17,110
+2007,Drought,9.229778249444,17,131
+2007,Flood,8.73594656678,94,131
+2007,Earthquake,1.200918338,18,131
+2007,Extreme weather,30.5593961112,57,131
+2007,Extreme temperature,0.0,27,131
+2007,Volcanic activity,0.0,9,131
+2007,Wildfire,0.7722197261,18,131
+2007,Glacial lake outburst flood,0.0,0,131
+2007,Dry mass movement,0.0,0,131
+2007,Wet mass movement,0.0,10,131
+2008,Drought,0.00548349467,23,127
+2008,Flood,8.16044176619,92,127
+2008,Earthquake,2.7039518894300003,18,127
+2008,Extreme weather,80.37288607011001,55,127
+2008,Extreme temperature,16.95284997,16,127
+2008,Volcanic activity,0.0,9,127
+2008,Wildfire,0.16200842529999998,8,127
+2008,Glacial lake outburst flood,0.0,0,127
+2008,Dry mass movement,0.0,6,127
+2008,Wet mass movement,0.0,12,127
+2009,Drought,0.19813499592,31,122
+2009,Flood,4.740431340736,89,122
+2009,Earthquake,24.7565615361,22,122
+2009,Extreme weather,10.406228764399998,44,122
+2009,Extreme temperature,0.24240851041,25,122
+2009,Volcanic activity,0.0,4,122
+2009,Wildfire,0.15262622359999997,11,122
+2009,Glacial lake outburst flood,0.0,0,122
+2009,Dry mass movement,0.0,3,122
+2009,Wet mass movement,0.00905606354,22,122
+2010,Drought,1.1030698640999999,31,137
+2010,Flood,14.478419677762002,99,137
+2010,Earthquake,86.510431424194,18,137
+2010,Extreme weather,12.809483870316999,52,137
+2010,Extreme temperature,0.7435992194100001,33,137
+2010,Volcanic activity,0.0,9,137
+2010,Wildfire,0.23893762470000002,11,137
+2010,Glacial lake outburst flood,0.0,0,137
+2010,Dry mass movement,0.0,0,137
+2010,Wet mass movement,1.2688057965619999,25,137
+2011,Drought,0.9481386350000001,26,107
+2011,Flood,24.7224012005,81,107
+2011,Earthquake,15.083219233033997,24,107
+2011,Extreme weather,2.6436609121499997,46,107
+2011,Extreme temperature,0.050234584061300006,18,107
+2011,Volcanic activity,0.02031693097,8,107
+2011,Wildfire,0.1330283518,8,107
+2011,Glacial lake outburst flood,0.0,0,107
+2011,Dry mass movement,0.0,0,107
+2011,Wet mass movement,0.0,17,107
+2012,Drought,1.2934949320000002,33,123
+2012,Flood,7.9534224,80,123
+2012,Earthquake,1.6189912361300003,21,123
+2012,Extreme weather,22.522540378795995,38,123
+2012,Extreme temperature,0.008068039789999999,45,123
+2012,Volcanic activity,0.0,3,123
+2012,Wildfire,0.13354512229999999,9,123
+2012,Glacial lake outburst flood,0.0,0,123
+2012,Dry mass movement,0.0,3,123
+2012,Wet mass movement,0.0,13,123
+2013,Drought,2.032903822,19,114
+2013,Flood,24.199698020040007,86,114
+2013,Earthquake,0.52801585533,20,114
+2013,Extreme weather,7.33375712545,43,114
+2013,Extreme temperature,0.3771133519,21,114
+2013,Volcanic activity,0.0,5,114
+2013,Wildfire,0.0309390321,10,114
+2013,Glacial lake outburst flood,0.0,0,114
+2013,Dry mass movement,0.000131498834,3,114
+2013,Wet mass movement,0.0,11,114
+2014,Drought,0.9522184673,25,102
+2014,Flood,12.03901671543,73,102
+2014,Earthquake,0.455481703723,21,102
+2014,Extreme weather,10.0861080239,40,102
+2014,Extreme temperature,0.02922513006,21,102
+2014,Volcanic activity,0.021963037869999997,10,102
+2014,Wildfire,0.0230112471,5,102
+2014,Glacial lake outburst flood,0.0,0,102
+2014,Dry mass movement,0.0,0,102
+2014,Wet mass movement,0.677109807805,15,102
+2015,Drought,5.132787530000001,42,124
+2015,Flood,7.778167632185,87,124
+2015,Earthquake,22.160418691338503,19,124
+2015,Extreme weather,157.85376113160498,53,124
+2015,Extreme temperature,0.05010710023,18,124
+2015,Volcanic activity,0.2495133586,8,124
+2015,Wildfire,0.177373585,12,124
+2015,Glacial lake outburst flood,0.0,0,124
+2015,Dry mass movement,0.0,3,124
+2015,Wet mass movement,0.024419609761,17,124
+2016,Drought,7.701942036999999,35,112
+2016,Flood,4.66603682546,80,112
+2016,Earthquake,6.8524915473400005,25,112
+2016,Extreme weather,35.5990651524,41,112
+2016,Extreme temperature,0.03320089832,15,112
+2016,Volcanic activity,0.0,3,112
+2016,Wildfire,0.5385092036,11,112
+2016,Glacial lake outburst flood,0.0,0,112
+2016,Dry mass movement,0.0,0,112
+2016,Wet mass movement,0.01339655055,13,112
+2017,Drought,1.3666732667000001,28,127
+2017,Flood,5.2437105259,72,127
+2017,Earthquake,0.9154471479699999,17,127
+2017,Extreme weather,606.42453718601,67,127
+2017,Extreme temperature,0.0,15,127
+2017,Volcanic activity,0.0,5,127
+2017,Wildfire,0.779079805,16,127
+2017,Glacial lake outburst flood,0.0,0,127
+2017,Dry mass movement,0.0,3,127
+2017,Wet mass movement,0.847346105371,22,127
+2018,Drought,1.2986261620000001,26,124
+2018,Flood,2.61472943275,77,124
+2018,Earthquake,0.6023615870900001,13,124
+2018,Extreme weather,3.7556758244,47,124
+2018,Extreme temperature,0.0,30,124
+2018,Volcanic activity,0.036870273200000005,12,124
+2018,Wildfire,0.19748423924000003,12,124
+2018,Glacial lake outburst flood,0.0,0,124
+2018,Dry mass movement,0.0,3,124
+2018,Wet mass movement,0.304413214636,15,124
+2019,Drought,0.32335630842000007,32,123
+2019,Flood,2.7296610175,86,123
+2019,Earthquake,4.9115943283600005,20,123
+2019,Extreme weather,42.263593748299996,48,123
+2019,Extreme temperature,0.0,21,123
+2019,Volcanic activity,0.0,8,123
+2019,Wildfire,0.11904072570000002,16,123
+2019,Glacial lake outburst flood,0.0,0,123
+2019,Dry mass movement,0.0,0,123
+2019,Wet mass movement,0.0024338219400000002,25,123
+2020,Drought,0.4479642135,25,125
+2020,Flood,6.020391396199999,91,125
+2020,Earthquake,23.668447906124005,15,125
+2020,Extreme weather,35.51221216970001,62,125
+2020,Extreme temperature,0.0,9,125
+2020,Volcanic activity,0.01931912097,6,125
+2020,Wildfire,0.2461075911,14,125
+2020,Glacial lake outburst flood,0.0,0,125
+2020,Dry mass movement,0.0,0,125
+2020,Wet mass movement,0.03575467329,22,125
+2021,Drought,5.2615390764,29,130
+2021,Flood,3.0678840293999996,95,130
+2021,Earthquake,8.06922783939,20,130
+2021,Extreme weather,4.210293041499999,60,130
+2021,Extreme temperature,0.23663124630000001,6,130
+2021,Volcanic activity,37.34203498550001,14,130
+2021,Wildfire,0.52885279466,19,130
+2021,Glacial lake outburst flood,0.009646927999999999,3,130
+2021,Dry mass movement,0.0,0,130
+2021,Wet mass movement,0.00563791134,15,130
+2022,Drought,6.5165247312,41,133
+2022,Flood,3.92507741007,80,133
+2022,Earthquake,0.45427603520000004,21,133
+2022,Extreme weather,8.613470926000002,53,133
+2022,Extreme temperature,0.0,45,133
+2022,Volcanic activity,0.00050885544,6,133
+2022,Wildfire,0.1345214479,17,133
+2022,Glacial lake outburst flood,0.0,4,133
+2022,Dry mass movement,0.0,0,133
+2022,Wet mass movement,0.0,16,133
