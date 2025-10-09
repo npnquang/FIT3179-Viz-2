@@ -19,7 +19,7 @@ h2 {
 }
 
 /* Visualization containers styling */
-#symbol_map, #bar_chart, #line_chart, #choropleth_map, #area_chart, #area_chart_deaths {
+#symbol_map, #bar_chart, #line_chart, #choropleth_map, #area_chart, #area_chart_deaths, #pie_chart {
     background-color: white;
     padding: 20px;
     margin: 20px 0;

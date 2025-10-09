@@ -1,0 +1,117 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": { "expr": "'Storm Types Distribution - Year: ' + globalYear" },
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "#333",
+        "subtitle": "Proportion of different storm types for selected year",
+        "subtitleFontSize": 12,
+        "subtitleColor": "#666"
+    },
+    "width": 400,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/npnquang/FIT3179-Viz-2/refs/heads/main/data/ibtracs_first_locations.csv"
+    },
+    "params": [
+        {
+            "name": "globalYear",
+            "value": 2010
+        }
+    ],
+    "transform": [
+        {
+            "filter": "datum.YEAR == globalYear"
+        },
+        {
+            "calculate": "datum.NATURE == 'Mixture(contradicting report from different agencies)' ? 'Mixed Reports' : datum.NATURE == 'Not reported' ? 'Not Reported' : datum.NATURE",
+            "as": "StormTypeFormatted"
+        },
+        {
+            "aggregate": [
+                {
+                    "op": "count",
+                    "as": "count"
+                }
+            ],
+            "groupby": ["StormTypeFormatted"]
+        },
+        {
+            "window": [
+                {
+                    "op": "sum",
+                    "field": "count",
+                    "as": "total"
+                }
+            ]
+        },
+        {
+            "calculate": "datum.count / datum.total * 100",
+            "as": "percentage"
+        }
+    ],
+    "mark": {
+        "type": "arc",
+        "innerRadius": 0,
+        "outerRadius": 180,
+        "stroke": "white",
+        "strokeWidth": 2
+    },
+    "encoding": {
+        "theta": {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Number of Storms"
+        },
+        "color": {
+            "field": "StormTypeFormatted",
+            "type": "nominal",
+            "title": "Storm Type",
+            "scale": {
+                "domain": [
+                    "Tropical",
+                    "Disturbance",
+                    "Extratropical",
+                    "Subtropical",
+                    "Mixed Reports",
+                    "Not Reported"
+                ],
+                "range": [
+                    "#DC143C",
+                    "#FF6347",
+                    "#FF8C00",
+                    "#FFD700",
+                    "#9370DB",
+                    "#808080"
+                ]
+            },
+            "legend": {
+                "orient": "right",
+                "title": "Storm Types",
+                "titleFontSize": 12,
+                "labelFontSize": 10,
+                "symbolSize": 100,
+                "offset": 10
+            }
+        },
+        "tooltip": [
+            {
+                "field": "StormTypeFormatted",
+                "type": "nominal",
+                "title": "Storm Type"
+            },
+            {
+                "field": "count",
+                "type": "quantitative",
+                "title": "Number of Storms"
+            },
+            {
+                "field": "percentage",
+                "type": "quantitative",
+                "title": "Percentage",
+                "format": ".1f"
+            }
+        ]
+    }
+}

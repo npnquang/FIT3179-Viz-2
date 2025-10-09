@@ -51,6 +51,9 @@
 <h2>Number of Storms per Year</h2>
 <div id="line_chart"></div>
 
+<h2>Storm Types Distribution</h2>
+<div id="pie_chart"></div>
+
 
 
 
@@ -71,7 +74,8 @@
         GlobalDashboardState.loadVisualization('#line_chart', 'js/line_chart.vg.json', 'lineChart'),
         GlobalDashboardState.loadVisualization('#symbol_map', 'js/dotmap_map.vg.json', 'symbolMap'),
         GlobalDashboardState.loadVisualization('#area_chart', 'js/area_chart_disasters.vg.json', 'areaChart'),
-        GlobalDashboardState.loadVisualization('#area_chart_deaths', 'js/area_chart_deaths.vg.json', 'areaChartDeaths')
+        GlobalDashboardState.loadVisualization('#area_chart_deaths', 'js/area_chart_deaths.vg.json', 'areaChartDeaths'),
+        GlobalDashboardState.loadVisualization('#pie_chart', 'js/pie_chart_storm_types.vg.json', 'pieChart')
       ]);
       
       console.log('Dashboard loaded successfully!');
