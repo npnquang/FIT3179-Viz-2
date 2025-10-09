@@ -39,6 +39,11 @@
   </div>
 </div>
 
+<h2>Proportion of Economic Damages by Natural Disaster Type</h2>
+<div id="area_chart"></div>
+
+<h2>Proportion of Deaths by Natural Disaster Type</h2>
+<div id="area_chart_deaths"></div>
 
 <h2>Storm Origin Locations</h2>
 <div id="symbol_map"></div>
@@ -46,8 +51,7 @@
 <h2>Number of Storms per Year</h2>
 <div id="line_chart"></div>
 
-<h2>Proportion of Economic Damages by Natural Disaster Type</h2>
-<div id="area_chart"></div>
+
 
 
 <script type="text/javascript">
@@ -66,7 +70,8 @@
       await Promise.all([
         GlobalDashboardState.loadVisualization('#line_chart', 'js/line_chart.vg.json', 'lineChart'),
         GlobalDashboardState.loadVisualization('#symbol_map', 'js/dotmap_map.vg.json', 'symbolMap'),
-        GlobalDashboardState.loadVisualization('#area_chart', 'js/area_chart_disasters.vg.json', 'areaChart')
+        GlobalDashboardState.loadVisualization('#area_chart', 'js/area_chart_disasters.vg.json', 'areaChart'),
+        GlobalDashboardState.loadVisualization('#area_chart_deaths', 'js/area_chart_deaths.vg.json', 'areaChartDeaths')
       ]);
       
       console.log('Dashboard loaded successfully!');
@@ -109,7 +114,7 @@
 
 <style>
 /* Visualization containers styling */
-#symbol_map, #bar_chart, #line_chart, #choropleth_map, #area_chart {
+#symbol_map, #bar_chart, #line_chart, #choropleth_map, #area_chart, #area_chart_deaths {
   margin: 20px 0;
   padding: 15px;
   background: #fafafa;
