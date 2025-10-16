@@ -6,7 +6,7 @@
         "anchor": "start",
         "color": "#333"
     },
-    "width": 800,
+    "width": "container",
     "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/npnquang/FIT3179-Homework-10/refs/heads/main/data/ibtracs_first_locations.csv"

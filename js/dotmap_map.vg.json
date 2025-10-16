@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 900,
-    "height": 500,
+    "width": "container",
+    "height": 400,
     "projection": { "type": "naturalEarth1" },
     "title": {
-        "text": "Number of Storms per Year (2005-2025)",
+        "text": "Original location of storms around the world (2000 - 2025)",
         "fontSize": 16,
         "anchor": "start",
         "color": "#333"

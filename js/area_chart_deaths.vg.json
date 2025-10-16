@@ -5,11 +5,11 @@
         "fontSize": 16,
         "anchor": "start",
         "color": "#333",
-        "subtitle": "Global deaths from natural disasters, with storms highlighted",
+        "subtitle": "Global deaths from natural disasters",
         "subtitleFontSize": 12,
         "subtitleColor": "#666"
     },
-    "width": 900,
+    "width": "container",
     "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/npnquang/FIT3179-Viz-2/refs/heads/main/data/global_deaths_by_disaster_type.csv"

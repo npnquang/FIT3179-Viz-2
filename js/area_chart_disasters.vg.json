@@ -5,16 +5,19 @@
         "fontSize": 16,
         "anchor": "start",
         "color": "#333",
-        "subtitle": "Global economic damages as share of GDP, with storms highlighted",
+        "subtitle": "Global economic damages as share of GDP",
         "subtitleFontSize": 12,
         "subtitleColor": "#666"
     },
-    "width": 900,
+    "width": "container",
     "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/npnquang/FIT3179-Viz-2/refs/heads/main/data/global_economic_damages_by_disaster_type.csv"
     },
     "transform": [
+        {
+            "filter": "toNumber(datum.Year) >= 2000"
+        },
         {
             "calculate": "toNumber(datum.Year)",
             "as": "YearNum"
