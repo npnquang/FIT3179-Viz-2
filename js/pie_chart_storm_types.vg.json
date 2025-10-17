@@ -38,7 +38,7 @@
             "groupby": ["StormTypeFormatted"]
         },
         {
-            "window": [
+            "joinaggregate": [
                 {
                     "op": "sum",
                     "field": "count",
