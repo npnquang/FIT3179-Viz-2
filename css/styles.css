@@ -271,6 +271,87 @@ h1 {
   margin-top: 20px;
 }
 
+/* Data Sources Footer */
+.data-sources {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 2px solid #1f77b4;
+  border-radius: 8px;
+}
+
+.data-sources h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.sources-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.source-item {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.source-item strong {
+  color: #555;
+}
+
+.source-item a {
+  color: #1f77b4;
+  text-decoration: none;
+  margin-left: 8px;
+  transition: color 0.2s ease;
+}
+
+.source-item a:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+/* Responsive design for footer */
+@media (min-width: 768px) {
+  .sources-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .source-item {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .source-item:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Author information styling */
+.author-info {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.author-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.author-info strong {
+  color: #1f77b4;
+  font-weight: 600;
+}
+
 /* Side-by-side charts layout */
 .charts-side-by-side {
   display: flex;
