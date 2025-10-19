@@ -1,13 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 20px 125px;
     background-color: #f5f5f5;
 }
 
 h1 {
     color: #333;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+/* Introduction section styling */
+.intro-section {
+    margin: 0 0 30px 0;
+    width: 100%;
+    text-align: justify;
+}
+
+.intro-text {
+    color: #666;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    border-left: 4px solid #1f77b4;
+    font-size: 16px;
 }
 
 /* Visualization containers styling */
@@ -350,6 +370,42 @@ h1 {
 .author-info strong {
   color: #1f77b4;
   font-weight: 600;
+}
+
+/* Analysis sections styling */
+.analysis-section {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.analysis-text {
+  color: #666;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  border-left: 4px solid #1f77b4;
+  text-align: justify;
+}
+
+/* Responsive design for analysis sections */
+@media (max-width: 768px) {
+  .analysis-section {
+    margin: 20px 0;
+    padding: 15px;
+  }
+  
+  .analysis-section h3 {
+    font-size: 16px;
+  }
+  
+  .analysis-text {
+    padding: 12px;
+    font-size: 14px;
+  }
 }
 
 /* Side-by-side charts layout */

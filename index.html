@@ -19,11 +19,22 @@
 <body>
 <h1>Storm Analysis Dashboard</h1>
 
+<div class="intro-section">
+  <p class="intro-text">
+    This interactive dashboard provides a comprehensive analysis of global storm patterns and natural disaster impacts spanning from 2005 to 2025.
+    By examining multiple data dimensions - from economic damages and mortality rates to geographic distribution and storm classifications - users can gain deep insights into how natural disasters, particularly storms, have shaped our world over the past two decades.
+    The dashboard features synchronized visualizations that allow you to explore temporal trends, compare disaster types, and understand the evolving nature of storm impacts globally.    
+    <br><br>
+    Use the year control in the top-right corner to filter all charts simultaneously and discover how storm patterns and disaster consequences have changed over time.
+    Red highlighting throughout the visualizations emphasizes storm-related disasters, revealing their significant contribution to global disaster impacts compared to other natural hazards.
+  </p>
+</div>
+
 <!-- Floating Year Control -->
 <div class="floating-controls">
   <div class="floating-year-control">
     <div class="control-header">
-      <span class="control-title">Year Control</span>
+      <span class="control-title">Year</span>
       <button class="toggle-btn" id="toggleControls">-</button>
     </div>
     <div class="control-content" id="controlContent">
@@ -39,10 +50,6 @@
   </div>
 </div>
 
-<div id="area_chart"></div>
-
-<div id="area_chart_deaths"></div>
-
 <div class="charts-side-by-side">
   <div class="chart-container">
     <div id="symbol_map"></div>
@@ -52,10 +59,42 @@
     <div id="pie_chart"></div>
   </div>
 </div>
+<div class="analysis-section">
+  <p class="analysis-text">
+  The spatial distribution of storm origins makes the physical drivers obvious: most genesis points cluster over warm tropical and subtropical oceans, where sea-surface temperatures and atmospheric conditions favour cyclone formation. The map shows dense source regions in the tropical Atlantic and Pacific basins, while the companion pie chart breaks down storm classifications for the selected year - typically showing tropical cyclones and disturbances as the largest categories.
+    <br><br>
+    This geographic concentration explains why coastal and island nations face disproportionate exposure: a large fraction of storms form and track over ocean corridors that make landfall in a relatively small set of countries. Comparing the map and pie chart through time helps identify shifts in storm type composition or basin activity that drive changes in risk for different regions.
+  </p>
+</div>
 
 <div id="line_chart"></div>
+<div class="analysis-section">
+  <p class="analysis-text">
+    The multi-year line chart reveals an oscillatory signal in storm counts that is consistent with known modes of climate variability such as the El Niño-Southern Oscillation (ENSO) and other ocean-atmosphere patterns. These modes influence sea-surface temperatures and atmospheric circulation, which in turn affect storm formation and basin activity across multi-year periods.
+    <br><br>
+    It is important to couple this frequency information with the impact-focused charts (economic damages and deaths): an increase in storm counts does not always translate into higher societal impacts if storms are weaker or affect less vulnerable locations. The highlighted selected-year marker makes it easy to compare the absolute number of storms to the contemporaneous economic and human consequences shown elsewhere on the dashboard.
+  </p>
+</div>
 
+<div id="area_chart"></div>
+<div class="analysis-section">
+  <p class="analysis-text">
+    The economic impact analysis reveals that storms consistently represent the highest proportion of economic damages across most years in the dataset, demonstrating their significant financial burden on global economies. This dominance can be attributed to several factors: the high frequency of storm occurrences compared to other natural disasters, their ability to affect large geographic areas simultaneously, and their tendency to damage critical infrastructure and economic centers along coastlines. 
+    <br><br>
+    Flooding appears as the second-highest contributor to economic damages, which is directly linked to storm activity as heavy rainfall and storm surge are primary causes of flood-related economic losses. The data shows interesting temporal patterns, with some years exhibiting particularly high storm-related economic impacts, likely corresponding to major hurricane seasons or significant cyclone events. 
+    <br><br>
+    While other disasters like earthquakes and droughts may be more severe in terms of immediate destruction or long-term effects, the frequency factor gives storms their prominent position in the economic damage hierarchy. The visualization also reveals the interconnected nature of disaster impacts, as storm-induced flooding amplifies the overall economic burden of weather-related events.
+  </p>
+</div>
 
+<div id="area_chart_deaths"></div>
+<div class="analysis-section">
+  <p class="analysis-text">
+    While advances in forecasting, early warning systems, and emergency response have reduced fatalities from storms in many regions, storms continue to be a major cause of disaster-related deaths worldwide. The deaths area chart shows that, although other hazards such as earthquakes or heatwaves can produce very large single-year mortality spikes, storms consistently contribute a substantial share of annual disaster fatalities - often on the order of 20-30% in many years.
+    <br><br>
+    Mortality is driven not only by storm intensity, but also by exposure and vulnerability: densely populated coastal zones, fragile infrastructure, and gaps in preparedness or evacuation capacity amplify human impacts. The chart highlights specific years with anomalous spikes; linking those years to the geographic and economic views helps reveal whether high mortality arose from especially severe storms, widespread flooding, or failures in protective systems.
+  </p>
+</div>
 
 
 <script type="text/javascript">
