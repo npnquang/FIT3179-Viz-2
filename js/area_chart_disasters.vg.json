@@ -31,7 +31,7 @@
             "as": "IsStorm"
         },
         {
-            "window": [
+            "joinaggregate": [
                 {
                     "op": "sum",
                     "field": "Total_Economic_Damage_Share_GDP",
