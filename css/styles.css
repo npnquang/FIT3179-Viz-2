@@ -372,6 +372,29 @@ h1 {
   font-weight: 600;
 }
 
+/* AI acknowledgement styling */
+.ai-acknowledgement {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.ai-acknowledgement h4 {
+  margin: 0 0 8px 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ai-acknowledgement p {
+  margin: 0;
+  color: #888;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 /* Analysis sections styling */
 .analysis-section {
   margin: 20px 0;
